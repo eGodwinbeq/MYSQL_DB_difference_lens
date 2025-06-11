@@ -57,7 +57,7 @@ function getColumns($conn, $table) {
     return $columns;
 }
 
-echo "\n🔍 Column Differences in Common Tables:\n";
+echo "<br>\n🔍 Column Differences in Common Tables:\n";
 foreach ($commonTables as $table) {
     $cols1 = getColumns($conn1, $table);
     $cols2 = getColumns($conn2, $table);
